@@ -1,63 +1,57 @@
 
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-function Navbar(){
+function Navbar() {
+  return (
+    <div className="fixed top-0 left-0 w-full z-50">
 
-return(
-<>
-<div className="bg-black text-white text-center py-1">
-Sharing Knowledge, Ideas & Stories From Around the World
-</div>
-<nav className="navbar navbar-expand-lg navbar-light bg-white shadow py-3">
-<div className="container">
-   <img 
-src="https://wikilovesfolklore.org/wp-content/uploads/2024/11/cropped-Wiki_Loves_Folklore_banner_logo-1536x570.webp"
-alt="logo"
-style={{height:"60px"}}
-className="me-2"
-/>
+      {/* Top info bar */}
+      <div className="bg-black text-white text-center py-1 text-sm">
+        Sharing Knowledge, Ideas & Stories From Around the World
+      </div>
 
+      {/* Main Navbar */}
+      <nav className="bg-white shadow">
 
-<Link className="navbar-brand fw-bold" to="/">
-Blog CMS
-</Link>
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
 
-<button 
-className="navbar-toggler" 
-type="button" 
-data-bs-toggle="collapse" 
-data-bs-target="#navbarNav"
->
-<span className="navbar-toggler-icon"></span>
-</button>
+          {/* Logo + Brand */}
+          <div className="flex items-center gap-3">
+            <img
+              src="https://wikilovesfolklore.org/wp-content/uploads/2024/11/cropped-Wiki_Loves_Folklore_banner_logo-1536x570.webp"
+              alt="logo"
+              className="h-10"
+            />
 
-<div className="collapse navbar-collapse" id="navbarNav">
+            <Link to="/" className="text-xl font-bold text-gray-800">
+              Blog CMS
+            </Link>
+          </div>
 
-<ul className="navbar-nav ms-auto">
+          {/* Nav Links */}
+          <ul className="flex gap-6 text-gray-700 font-medium">
 
-<li className="nav-item">
-<Link className="nav-link" to="/">Home</Link>
-</li>
+            <li>
+              <Link to="/" className="hover:text-black no-underline">
+                Home
+              </Link>
+            </li>
 
-<li className="nav-item">
-<Link className="nav-link" to="/blogs">Blogs</Link>
-</li>
+            <li>
+              <Link to="/blogs" className="hover:text-black no-underline">
+                Blogs
+              </Link>
+            </li>
 
-<li className="nav-item">
-<Link className="nav-link" to="/admin/login">Admin</Link>
-</li>
+          </ul>
 
-</ul>
+        </div>
 
-</div>
+      </nav>
 
-</div>
-
-</nav>
-</>
-
-)
-
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
+

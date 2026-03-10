@@ -9,6 +9,7 @@ import AddBlog from "./pages/admin/AddBlog"
 import EditBlog from "./pages/admin/EditBlog"
 import Navbar from "./components/Navbar";
 import PrivateRoute from "./components/PrivateRoute"
+import LatestBlogs from "./components/LatestBlogs"
 
 
 
@@ -17,12 +18,26 @@ function App(){
     <>
     
        <Navbar/>
+      
        <Routes>
      
 
       {/* Public Routes */}
 
       <Route path="/" element={<Home />} />
+      <Route 
+    path="/blogs" 
+    element={
+    <LatestBlogs 
+    blogs={
+    (JSON.parse(localStorage.getItem("blogs")) || [])
+    .filter(blog => blog.status === "published")
+    }
+/>
+}
+/>
+      
+
       <Route path="/blog/:id" element={<BlogDetail />} />
 
       {/* Admin Routes */}

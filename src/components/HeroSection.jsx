@@ -1,31 +1,3 @@
-// function HeroSection() {
-//   return (
-
-//     <div className="hero-section">
-
-//       <div className="overlay">
-
-//         <div className="drop-box">
-//           <h2>Welcome To Our Blog</h2>
-//           <p>Read Amazing Stories From Around The World</p>
-//         </div>
-
-//         {/* <div className="info-box">
-//           <h4>Latest Blogs & Articles</h4>
-//           <p>Technology, Travel, Lifestyle and more...</p>
-//         </div> */}
-
-//       </div>
-
-//     </div>
-
-//   )
-// }
-
-// export default HeroSection
-
-
-
 function HeroSection() {
   return (
 

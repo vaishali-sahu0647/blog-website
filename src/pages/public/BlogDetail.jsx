@@ -17,10 +17,10 @@ return(
 
 <div className="max-w-4xl mx-auto px-4 py-24">
 
-{/* Blog Card */}
+
 <div className="bg-white shadow-lg rounded-lg overflow-hidden">
 
-{/* Image */}
+
 <img
 src={blog.image}
 alt={blog.title}
@@ -29,25 +29,25 @@ className="w-full h-[400px] object-cover"
 
 <div className="p-6">
 
-{/* Title */}
+
 <h1 className="text-3xl font-bold mb-4 text-gray-800">
 {blog.title}
 </h1>
 
-{/* Author + Date */}
+
 <div className="flex justify-between text-gray-500 text-sm mb-4">
 
 <span>
-👤 {blog.author}
+ {blog.author}
 </span>
 
 <span>
-📅 {blog.date}
+ {blog.date}
 </span>
 
 </div>
 
-{/* Category + Tags */}
+
 <div className="flex gap-3 mb-4">
 
 {blog.category && (
@@ -66,7 +66,7 @@ className="w-full h-[400px] object-cover"
 
 <hr className="my-5"/>
 
-{/* Content */}
+
 <p className="text-gray-700 leading-8 text-lg">
 {blog.content}
 </p>

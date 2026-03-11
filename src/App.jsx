@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation} from "react-router-dom"
 import Home from "./pages/public/Home"
 import BlogDetail from "./pages/public/BlogDetail"
 
@@ -14,15 +14,18 @@ import LatestBlogs from "./components/LatestBlogs"
 
 
 function App(){
+  const location = useLocation()
+  const isAdminPage = location.pathname.startsWith("/admin");
+  
   return(
     <>
     
-       <Navbar/>
+     {!isAdminPage && <Navbar/>}
       
        <Routes>
      
 
-      {/* Public Routes */}
+      
 
       <Route path="/" element={<Home />} />
       <Route 
@@ -40,7 +43,7 @@ function App(){
 
       <Route path="/blog/:id" element={<BlogDetail />} />
 
-      {/* Admin Routes */}
+     
 
       <Route path="/admin/login" element={<Login />} />
       <Route path="/admin/dashboard" element={
@@ -57,9 +60,10 @@ function App(){
           <AddBlog />
         </PrivateRoute>
         } />
-      <Route path="/admin/edit-blog/:id" element={
+      <Route path="/admin/add-blog/:id" element={
         <PrivateRoute>
-         <EditBlog />
+          <AddBlog />
+         
         </PrivateRoute>
         } />
 

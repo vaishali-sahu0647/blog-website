@@ -39,14 +39,7 @@ className="w-full h-[200px] object-cover"
 Author: {blog.author}
 </p>
 
-{/* <Link
-to={`/blog/${blog.id}`}
-className="mt-auto bg-black text-white px-4 py-2
-rounded-md text-center
-hover:bg-gray-800 transition"
->
-Read More
-</Link> */}
+
 <Link
 to={`/blog/${blog.id}`}
 className="bg-black text-white px-4 py-2

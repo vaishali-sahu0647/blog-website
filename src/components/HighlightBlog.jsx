@@ -12,17 +12,17 @@ function HighlightBlog({ blog }) {
 
       <div className="relative rounded-xl overflow-hidden shadow-2xl">
 
-        {/* Image */}
+       
         <img
           src={blog.image}
           alt={blog.title}
           className="w-full h-[450px] object-cover"
         />
 
-        {/* Overlay */}
+      
         <div className="absolute inset-0 flex items-end justify-end p-8">
 
-          {/* Content Box Right Side */}
+         
           <div className="backdrop-blur-md bg-gray-300/30 
           p-6 rounded-xl text-white max-w-md
           flex flex-col items-center text-center

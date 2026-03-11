@@ -5,17 +5,17 @@ function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full z-50">
 
-      {/* Top info bar */}
+      
       <div className="bg-black text-white text-center py-1 text-sm">
         Sharing Knowledge, Ideas & Stories From Around the World
       </div>
 
-      {/* Main Navbar */}
+      
       <nav className="bg-white shadow">
 
         <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
 
-          {/* Logo + Brand */}
+          
           <div className="flex items-center gap-3">
             <img
               src="https://wikilovesfolklore.org/wp-content/uploads/2024/11/cropped-Wiki_Loves_Folklore_banner_logo-1536x570.webp"
@@ -28,7 +28,7 @@ function Navbar() {
             </Link>
           </div>
 
-          {/* Nav Links */}
+        
           <ul className="flex gap-6 text-gray-700 font-medium">
 
             <li>

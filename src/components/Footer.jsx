@@ -1,110 +1,3 @@
-// import { Link } from "react-router-dom"
-
-// function Footer(){
-
-// return(
-
-// <footer className="bg-dark text-white pt-5 pb-3">
-
-// <div className="container">
-
-// <div className="row">
-
-// {/* About */}
-// <div className="col-md-4 mb-4">
-// <h4 className="fw-bold">Blog CMS</h4>
-// <p>
-// Sharing knowledge, ideas and stories from around the world.
-// Read blogs about technology, culture, travel and lifestyle.
-// </p>
-// </div>
-
-
-// {/* Quick Links */}
-// <div className="col-md-2 mb-4">
-// <h5>Quick Links</h5>
-// <ul className="list-unstyled">
-
-// <li>
-// <Link className="text-white text-decoration-none" to="/">Home</Link>
-// </li>
-
-// <li>
-// <Link className="text-white text-decoration-none" to="/blogs">Blogs</Link>
-// </li>
-
-// <li>
-// <Link className="text-white text-decoration-none" to="/admin/login">Admin</Link>
-// </li>
-
-// </ul>
-// </div>
-
-
-// {/* Categories */}
-// <div className="col-md-3 mb-4">
-// <h5>Categories</h5>
-
-// <ul className="list-unstyled">
-
-// <li>Technology</li>
-// <li>Travel</li>
-// <li>Lifestyle</li>
-// <li>Culture</li>
-
-// </ul>
-// </div>
-
-
-// {/* Social */}
-// <div className="col-md-3 mb-4">
-
-// <h5>Follow Us</h5>
-
-// <p>Stay connected on social media</p>
-
-// <div className="d-flex gap-3">
-
-// <a href="#" className="text-white fs-4">
-// <i className="bi bi-facebook"></i>
-// </a>
-
-// <a href="#" className="text-white fs-4">
-// <i className="bi bi-instagram"></i>
-// </a>
-
-// <a href="#" className="text-white fs-4">
-// <i className="bi bi-twitter"></i>
-// </a>
-
-// <a href="#" className="text-white fs-4">
-// <i className="bi bi-youtube"></i>
-// </a>
-
-// </div>
-
-// </div>
-
-// </div>
-
-
-// <hr className="border-light"/>
-
-// <div className="text-center">
-// © 2026 Blog CMS | All Rights Reserved
-// </div>
-
-// </div>
-
-// </footer>
-
-// )
-
-// }
-
-// export default Footer
-
-
 import { Link } from "react-router-dom"
 
 function Footer(){
@@ -117,7 +10,7 @@ return(
 
 <div className="grid md:grid-cols-4 gap-8">
 
-{/* About */}
+
 <div>
 <h4 className="text-2xl font-bold mb-3">Blog CMS</h4>
 
@@ -128,7 +21,7 @@ Read blogs about technology, culture, travel and lifestyle.
 </div>
 
 
-{/* Quick Links */}
+
 <div>
 
 <h5 className="text-lg font-semibold mb-3">Quick Links</h5>
@@ -153,7 +46,7 @@ Blogs
 </div>
 
 
-{/* Categories */}
+
 <div>
 
 <h5 className="text-lg font-semibold mb-3">Categories</h5>
@@ -171,7 +64,7 @@ Blogs
 </div>
 
 
-{/* Social */}
+
 <div>
 
 <h5 className="text-lg font-semibold mb-3">Follow Us</h5>

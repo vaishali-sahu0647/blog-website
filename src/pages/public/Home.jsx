@@ -1,5 +1,3 @@
-
-
 import { useState } from "react"
 import HeroSection from "../../components/HeroSection"
 import Footer from "../../components/Footer"
@@ -16,7 +14,7 @@ const publishedBlogs = blogs.filter(
 (blog)=> blog.status === "published"
 )
 
-const featuredBlog = publishedBlogs[3]
+const featuredBlog = publishedBlogs[2]
 
 const [category,setCategory] = useState("All")
 
@@ -31,13 +29,13 @@ return(
 
 <HighlightBlog blog={featuredBlog}/>
 
-{/* Latest Blogs - No Filter */}
+
 <LatestBlogs blogs={publishedBlogs}/>
 
-{/* Categories */}
+
 <Categories setCategory={setCategory}/>
 
-{/* Category Filter Blogs */}
+
 <CategoryBlogs blogs={filteredBlogs} category={category}/>
 
 <Footer/>

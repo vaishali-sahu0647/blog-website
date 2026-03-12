@@ -74,11 +74,11 @@ Blog CMS
 <i className="fa fa-chart-line"></i> Dashboard
 </li>
 
-<li className="flex items-center gap-2 hover:bg-gray-800 p-2 rounded cursor-pointer">
+<li className="flex items-center gap-2 hover:bg-gray-800 p-2 rounded cursor-pointer" onClick={() => navigate("/blogs")}>
 <i className="fa fa-blog"></i> Blogs
 </li>
 
-<li className="flex items-center gap-2 hover:bg-gray-800 p-2 rounded cursor-pointer">
+<li className="flex items-center gap-2 hover:bg-gray-800 p-2 rounded cursor-pointer" onClick={() => navigate("/admin/add-blog")}>
 <i className="fa fa-plus"></i> Add Blog
 </li>
 
@@ -155,9 +155,6 @@ className="rounded-full w-8 h-8"
 </div>
 
 </div>
-
-
-
 
 
 <div className="bg-white rounded-lg shadow p-5">

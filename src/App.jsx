@@ -6,7 +6,6 @@ import Login from "./pages/admin/Login"
 import Dashboard from "./pages/admin/Dashboard"
 import BlogList from "./pages/admin/BlogList"
 import AddBlog from "./pages/admin/AddBlog"
-import EditBlog from "./pages/admin/EditBlog"
 import Navbar from "./components/Navbar";
 import PrivateRoute from "./components/PrivateRoute"
 import LatestBlogs from "./components/LatestBlogs"

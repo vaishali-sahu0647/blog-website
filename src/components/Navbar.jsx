@@ -43,6 +43,13 @@ function Navbar() {
               </Link>
             </li>
 
+             <li>
+              <Link to="/admin/login" className="hover:text-black no-underline">
+                login
+              </Link>
+            </li>
+
+
           </ul>
 
         </div>

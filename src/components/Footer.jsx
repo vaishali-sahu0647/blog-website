@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
 
 function Footer(){
 
@@ -29,7 +30,7 @@ Read blogs about technology, culture, travel and lifestyle.
 <ul className="space-y-2">
 
 <li>
-<Link to="/" className="text-gray-300 hover:text-white">
+<Link to="/" className="text-gray-300 hover:text-white" onClick={() => window.scrollTo(0, 0)}>
 Home
 </Link>
 </li>
@@ -76,19 +77,20 @@ Stay connected on social media
 <div className="flex gap-4 text-xl">
 
 <a href="#" className="hover:text-gray-400">
-<i className="bi bi-facebook"></i>
+<FaFacebook/>
+</a>
+
+
+<a href="#" className="hover:text-gray-400">
+<FaInstagram/>
 </a>
 
 <a href="#" className="hover:text-gray-400">
-<i className="bi bi-instagram"></i>
+<FaTwitter/>
 </a>
 
 <a href="#" className="hover:text-gray-400">
-<i className="bi bi-twitter"></i>
-</a>
-
-<a href="#" className="hover:text-gray-400">
-<i className="bi bi-youtube"></i>
+<FaYoutube/>
 </a>
 
 </div>

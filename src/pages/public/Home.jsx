@@ -14,7 +14,7 @@ const publishedBlogs = blogs.filter(
 (blog)=> blog.status === "published"
 )
 
-const featuredBlog = publishedBlogs[2]
+const highlighBlog = publishedBlogs[2]
 
 const [category,setCategory] = useState("All")
 
@@ -27,7 +27,7 @@ return(
 <div className="mt-24">
 <HeroSection/>
 
-<HighlightBlog blog={featuredBlog}/>
+<HighlightBlog blog={highlighBlog}/>
 
 
 <LatestBlogs blogs={publishedBlogs}/>
